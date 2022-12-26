@@ -1,0 +1,16 @@
+
+@layer components {
+  
+  .primary-btn{
+    @apply w-44 bg-primaryDarkPink rounded-3xl h-12 hover:bg-secondaryCharmPink
+  }
+  
+  .secondary-about-btn{
+    @apply w-32 h-12 rounded-3xl border border-primaryWaterWhite
+    hover:bg-primaryWaterWhite hover:text-secondaryMirageBlue
+  }
+  
+  .secondary-query-btn{
+    @apply w-[152px] h-12 rounded-3xl font-medium text-secondarySanJuanBlue border border-b-secondarySanJuanBlue hover:bg-secondarySanJuanBlue hover:text-primaryWaterWhite
+  }
+}
