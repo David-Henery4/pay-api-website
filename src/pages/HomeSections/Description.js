@@ -3,13 +3,13 @@ import { simpleUi, easyImplementation } from "../../assets";
 
 const Description = () => {
   return (
-    <section className="col-start-2 col-end-12">
-      <div>
+    <section className="col-start-2 col-end-12 text-center flex flex-col gap-20">
+      <div className="grid gap-12">
         <div>
           <img src={easyImplementation} alt="code-example" />
         </div>
-        <div>
-          <h3 className="font-dmDisplay text-secondarySanJuanBlue text-4xl font-medium">
+        <div className="flex flex-col gap-6 justify-center items-center">
+          <h3 className="font-dmDisplay text-secondarySanJuanBlue text-4xl font-medium tab:text-5xl">
             Easy to implement
           </h3>
           <p>
@@ -20,12 +20,12 @@ const Description = () => {
         </div>
       </div>
       {/**/}
-      <div>
+      <div className="grid gap-12">
         <div>
           <img src={simpleUi} alt="code-example" />
         </div>
-        <div>
-          <h3 className="font-dmDisplay text-secondarySanJuanBlue text-4xl font-medium">
+        <div className="flex flex-col gap-6 justify-center items-center">
+          <h3 className="font-dmDisplay text-secondarySanJuanBlue text-4xl font-medium tab:text-5xl">
             Simple UI & UX
           </h3>
           <p>

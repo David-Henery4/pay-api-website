@@ -16,10 +16,16 @@ module.exports = {
       dmDisplay: "DM Serif Display, serif",
       publicSans: "Public Sans, sans-serif",
     },
-    gridTemplateColumns: {
-      mobColumns: "24px repeat(10,1fr) 24px",
+    extend: {
+      gridTemplateColumns: {
+        mobColumns: "24px repeat(10,1fr) 24px",
+        tabColumns: "40px repeat(10,1fr) 40px",
+      },
+      screens: {
+        mob: "375px",
+        tab: "680px",
+      },
     },
-    extend: {},
   },
   plugins: [],
 };

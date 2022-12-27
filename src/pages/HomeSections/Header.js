@@ -8,17 +8,17 @@ const Header = () => {
         <PhoneMockup className="w-full h-full" />
       </div>
       <div className="w-full flex flex-col justify-center items-center text-center gap-6">
-        <h1 className="leading-9 text-[32px] font-dmDisplay font-medium text-secondarySanJuanBlue">
+        <h1 className="leading-9 text-[32px] font-dmDisplay font-medium text-secondarySanJuanBlue tab:text-5xl tab:leading-[56px] tab:max-w-xl">
           Start building with our APIs for absolutely free.
         </h1>
-        <div className="w-full flex flex-col gap-4">
+        <div className="relative w-full flex flex-col gap-4 max-w-[445px] tab:flex-row">
           <input
             type="email"
             name="email"
-            className="w-full px-7 py-3 rounded-3xl text-sm font-semibold"
+            className="h-12 w-full px-7 py-3 rounded-3xl text-sm font-semibold tab:pr-48"
             placeholder="Enter email address"
           />
-          <button className="text-primaryWaterWhite primary-btn h-12 w-full">
+          <button className="text-primaryWaterWhite primary-btn h-12 w-full tab:w-44 tab:absolute tab:top-0 tab:right-0">
             Schedule a Demo
           </button>
         </div>
