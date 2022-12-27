@@ -3,7 +3,7 @@ import { simpleUi, easyImplementation } from "../../assets";
 
 const Description = () => {
   return (
-    <section>
+    <section className="col-start-2 col-end-12">
       <div>
         <div>
           <img src={easyImplementation} alt="code-example" />

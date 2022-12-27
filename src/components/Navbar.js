@@ -3,7 +3,7 @@ import { Burger, Logo } from "../assets";
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex justify-between items-center">
+    <nav className="pt-10 w-full flex justify-between items-center col-start-2 col-end-12">
       <div>
         <Logo />
       </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   GoogleIcon,
   HewlettPackardIcon,
@@ -10,33 +10,35 @@ import {
 
 const Testimonials = () => {
   return (
-    <section className="bg-secondaryMirageBlue px-6 py-20">
-      <div>
-        <TeslaIcon />
-        <MicrosoftIcon />
-        <GoogleIcon />
-        <HewlettPackardIcon />
-        <NvidiaIcon />
-        <OracleIcon />
-      </div>
-      <div>
+    <section className="bg-secondaryMirageBlue py-20 col-start-1 col-end-13 grid grid-cols-mobColumns">
+      <div className="col-start-2 col-end-12">
         <div>
-          <h2 className="text-[32px] leading-9 font-dmDisplay text-primaryWaterWhite">
-            Who we work with
-          </h2>
-          <p>
-            Today, millions of people around the world have successfully
-            connected their accounts to apps they love using our API. We provide
-            developers with the tools they need to create easy and accessible
-            experiences for their users.{" "}
-          </p>
+          <TeslaIcon />
+          <MicrosoftIcon />
+          <GoogleIcon />
+          <HewlettPackardIcon />
+          <NvidiaIcon />
+          <OracleIcon />
         </div>
-        <button className="secondary-about-btn text-primaryWaterWhite">
-          About Us
-        </button>
+        <div>
+          <div>
+            <h2 className="text-[32px] leading-9 font-dmDisplay text-primaryWaterWhite">
+              Who we work with
+            </h2>
+            <p>
+              Today, millions of people around the world have successfully
+              connected their accounts to apps they love using our API. We
+              provide developers with the tools they need to create easy and
+              accessible experiences for their users.{" "}
+            </p>
+          </div>
+          <button className="secondary-about-btn text-primaryWaterWhite">
+            About Us
+          </button>
+        </div>
       </div>
     </section>
   );
-}
+};
 
-export default Testimonials
+export default Testimonials;

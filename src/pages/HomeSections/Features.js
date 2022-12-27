@@ -7,7 +7,7 @@ import {
 
 const Features = () => {
   return (
-    <section>
+    <section className="col-start-2 col-end-12">
       <div>
         <img src={personalFinancesIcon} alt="personal-finances" />
         <h4 className="text-lg font-semibold text-secondarySanJuanBlue">
