@@ -2,7 +2,7 @@
 @layer components {
   
   .primary-btn{
-    @apply w-44 bg-primaryDarkPink rounded-3xl h-12 hover:bg-secondaryCharmPink
+    @apply bg-primaryDarkPink rounded-3xl hover:bg-secondaryCharmPink
   }
   
   .secondary-about-btn{

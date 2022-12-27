@@ -1,17 +1,18 @@
-import React from 'react'
+import React from "react";
+import { Header, Testimonials, Description, Features } from "./HomeSections";
 
 const Home = () => {
   return (
     <>
-      <header>hero</header>
+      <Header />
       {/* TESIMONIALS */}
-      <section>testimonials</section>
+      <Testimonials />
       {/* DESCRIPTION */}
-      <section>product description</section>
+      <Description />
       {/* FEATURES */}
-      <section>features</section>
+      <Features/>
     </>
   );
-}
+};
 
-export default Home
+export default Home;

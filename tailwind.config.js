@@ -4,6 +4,7 @@ module.exports = {
   purge: ["./src/**/*.{js,jsx}", "./public/index.html"],
   theme: {
     colors: {
+      mainBgChilledWhite: "#EDF3F8",
       primaryDarkPink: "#ba4270",
       primaryWaterWhite: "#fbfcfe",
       secondarySanJuanBlue: "#36536b",

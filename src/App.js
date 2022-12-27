@@ -3,11 +3,11 @@ import {Home, About, Contact,Pricing} from "./pages"
 
 function App() {
   return (
-    <main className="App">
+    <main className="App bg-mainBgChilledWhite text-secondaryLightSanJuanBlue">
       {/* NAVBAR */}
-      <Navbar/>
+      <Navbar />
       {/* PAGE CONTENT */}
-      <Home/>
+      <Home />
       {/* <About/> */}
       {/* <Contact/> */}
       {/* <Pricing/> */}
