@@ -1,7 +1,6 @@
 import { Navbar, Footer } from "./components";
 import { Home, About, Contact, Pricing } from "./pages";
 
-
 function App() {
   return (
     <main className="App bg-mainBgChilledWhite text-secondaryLightSanJuanBlue grid grid-cols-mobColumns gap-y-20 sm:grid-cols-tabColumns">

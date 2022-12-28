@@ -20,10 +20,12 @@ module.exports = {
       gridTemplateColumns: {
         mobColumns: "24px repeat(10,1fr) 24px",
         tabColumns: "40px repeat(10,1fr) 40px",
+        deskColumns: "165px repeat(10,1fr) 165px",
       },
       screens: {
         mob: "375px",
         tab: "680px",
+        desk: "1150px",
       },
     },
   },

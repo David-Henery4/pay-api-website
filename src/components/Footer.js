@@ -12,9 +12,7 @@ const Footer = () => {
             {/* WILL BE NAVLINKS */}
             {navData.map((navLink) => (
               <li key={navLink.id}>
-                <a href={navLink.path}>
-                  {navLink.name}
-                </a>
+                <a href={navLink.path}>{navLink.name}</a>
               </li>
             ))}
           </ul>
