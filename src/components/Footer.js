@@ -4,7 +4,7 @@ import navData from '../navigation/navData';
 
 const Footer = () => {
   return (
-    <footer className="bg-secondaryMirageBlue py-8 col-start-1 col-end-13 grid grid-cols-mobColumns sm:grid-cols-tabColumns">
+    <footer className="bg-secondaryMirageBlue py-8 col-start-1 col-end-13 grid grid-cols-mobColumns sm:grid-cols-tabColumns xl:grid-cols-deskColumns">
       <div className="col-start-2 col-end-12 flex flex-col justify-center items-center gap-10 md:flex-row md:justify-between">
         <div className="flex flex-col justify-center items-center gap-10 md:flex-row">
           <Logo className="fill-primaryWaterWhite" />

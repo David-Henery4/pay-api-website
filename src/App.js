@@ -3,7 +3,7 @@ import { Home, About, Contact, Pricing } from "./pages";
 
 function App() {
   return (
-    <main className="App bg-mainBgChilledWhite text-secondaryLightSanJuanBlue grid grid-cols-mobColumns gap-y-20 sm:grid-cols-tabColumns">
+    <main className="App bg-mainBgChilledWhite text-secondaryLightSanJuanBlue grid grid-cols-mobColumns gap-y-20 sm:grid-cols-tabColumns xl:grid-cols-deskColumns">
       {/* NAVBAR */}
       <Navbar />
       {/* PAGE CONTENT */}
