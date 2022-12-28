@@ -11,6 +11,8 @@ import {ReactComponent as FacebookIcon} from "./shared/desktop/facebook.svg"
 import {ReactComponent as TwitterIcon} from "./shared/desktop/twitter.svg"
 import {ReactComponent as LinkedinIcon} from "./shared/desktop/linkedin.svg"
 import {ReactComponent as PhoneMockup} from "./home/desktop/illustration-phone-mockup.svg"
+import {ReactComponent as EasyImplementation} from "./home/desktop/illustration-easy-to-implement.svg"
+import { ReactComponent as SimpleUi } from "./home/desktop/illustration-simple-ui.svg";
 // IMGS
 import phoneMockup from "./home/desktop/illustration-phone-mockup.svg"
 import easyImplementation from "./home/desktop/illustration-easy-to-implement.svg"
@@ -33,6 +35,8 @@ export{
   LinkedinIcon,
   TwitterIcon,
   PhoneMockup,
+  SimpleUi,
+  EasyImplementation,
   // IMAGES
   phoneMockup,
   easyImplementation,
