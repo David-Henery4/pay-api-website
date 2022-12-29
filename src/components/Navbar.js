@@ -2,7 +2,9 @@ import React from "react";
 import { Burger, Logo } from "../assets";
 import navData from "../navigation/navData";
 
-const Navbar = () => {
+const Navbar = ({setIsSidebarOpen}) => {
+  
+  //
   return (
     <nav className="pt-10 w-full flex justify-between items-center col-start-2 col-end-12">
       <div className="flex justify-center items-center gap-16">
@@ -16,8 +18,13 @@ const Navbar = () => {
         </ul>
       </div>
       <div>
-        <Burger className="hover:cursor-pointer md:hidden" />
-        <button className="md:block hidden primary-btn h-12 w-44 text-primaryWaterWhite">Schedule a Demo</button>
+        <Burger
+          className="hover:cursor-pointer md:hidden"
+          onClick={() => setIsSidebarOpen(true)}
+        />
+        <button className="md:block hidden primary-btn h-12 w-44 text-primaryWaterWhite">
+          Schedule a Demo
+        </button>
       </div>
     </nav>
   );
