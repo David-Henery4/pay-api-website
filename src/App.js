@@ -13,10 +13,10 @@ function App() {
         setIsSidebarOpen={setIsSidebarOpen}
       />
       {/* PAGE CONTENT */}
-      <Home />
+      {/* <Home /> */}
       {/* <About/> */}
       {/* <Contact/> */}
-      {/* <Pricing/> */}
+      <Pricing/>
       {/**/}
       {/* CTA SECTION */}
       <section className="col-start-2 col-end-12 text-center flex flex-col justify-center items-center gap-8 py-20 tab:py-24 tab:gap-10 lg:flex-row lg:justify-between">

@@ -16,6 +16,7 @@ import { ReactComponent as SimpleUi } from "./home/desktop/illustration-simple-u
 import {ReactComponent as CodeSvg} from "./home/desktop/code-svg.svg"
 import {ReactComponent as TwoPhones} from "./home/desktop/two-phones.svg"
 import {ReactComponent as CloseIcon} from "./shared/mobile/close.svg"
+import {ReactComponent as CheckIcon} from "./shared/desktop/icon-check.svg"
 // IMGS
 import twoPhones from "./home/desktop/two-phones.svg"
 import codeSvg from "./home/desktop/code-svg.svg"
@@ -45,6 +46,7 @@ export{
   CodeSvg,
   TwoPhones,
   CloseIcon,
+  CheckIcon,
   // IMAGES
   twoPhones,
   codeSvg,
