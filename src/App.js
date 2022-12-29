@@ -3,7 +3,7 @@ import { Home, About, Contact, Pricing } from "./pages";
 
 function App() {
   return (
-    <main className="App bg-mainBgChilledWhite text-secondaryLightSanJuanBlue grid grid-cols-mobColumns gap-y-20 sm:grid-cols-tabColumns xl:grid-cols-deskColumns">
+    <main className="App bg-mainBgChilledWhite text-secondaryLightSanJuanBlue grid grid-cols-mobColumns sm:grid-cols-tabColumns xl:grid-cols-deskColumns">
       {/* NAVBAR */}
       <Navbar />
       {/* PAGE CONTENT */}
@@ -13,7 +13,7 @@ function App() {
       {/* <Pricing/> */}
       {/**/}
       {/* CTA SECTION */}
-      <section className="col-start-2 col-end-12 text-center flex flex-col justify-center items-center gap-8 tab:gap-10 lg:flex-row lg:justify-between">
+      <section className="col-start-2 col-end-12 text-center flex flex-col justify-center items-center gap-8 py-20 tab:py-24 tab:gap-10 lg:flex-row lg:justify-between">
         <h3 className="text-secondarySanJuanBlue text-[32px] font-dmDisplay tab:text-5xl">
           Ready to start?
         </h3>

@@ -3,7 +3,7 @@ import { phoneMockup, PhoneMockup } from "../../assets";
 
 const Header = () => {
   return (
-    <header className="col-start-2 col-end-12 flex flex-col justify-center items-center gap-6 tab:gap-12 lg:flex-row-reverse xl:justify-end desk:gap-[8vw]">
+    <header className="col-start-2 col-end-12 flex flex-col justify-center items-center gap-6 pt-8 pb-20 tab:pt-12 tab:pb-[100px] lg:py-[75px] tab:gap-12 lg:flex-row-reverse xl:justify-end desk:gap-[8vw]">
       <div className="w-full xl:max-w-[262px] xl:mx-auto">
         <PhoneMockup className="w-full h-[64vw] max-h-[300px] lg:max-h-[500px]" />
       </div>
