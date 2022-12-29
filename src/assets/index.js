@@ -13,7 +13,11 @@ import {ReactComponent as LinkedinIcon} from "./shared/desktop/linkedin.svg"
 import {ReactComponent as PhoneMockup} from "./home/desktop/illustration-phone-mockup.svg"
 import {ReactComponent as EasyImplementation} from "./home/desktop/illustration-easy-to-implement.svg"
 import { ReactComponent as SimpleUi } from "./home/desktop/illustration-simple-ui.svg";
+import {ReactComponent as CodeSvg} from "./home/desktop/code-svg.svg"
+import {ReactComponent as TwoPhones} from "./home/desktop/two-phones.svg"
 // IMGS
+import twoPhones from "./home/desktop/two-phones.svg"
+import codeSvg from "./home/desktop/code-svg.svg"
 import phoneMockup from "./home/desktop/illustration-phone-mockup.svg"
 import easyImplementation from "./home/desktop/illustration-easy-to-implement.svg"
 import simpleUi from "./home/desktop/illustration-simple-ui.svg"
@@ -37,7 +41,11 @@ export{
   PhoneMockup,
   SimpleUi,
   EasyImplementation,
+  CodeSvg,
+  TwoPhones,
   // IMAGES
+  twoPhones,
+  codeSvg,
   phoneMockup,
   easyImplementation,
   simpleUi,

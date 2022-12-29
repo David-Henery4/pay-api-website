@@ -13,11 +13,11 @@ function App() {
       {/* <Pricing/> */}
       {/**/}
       {/* CTA SECTION */}
-      <section className="col-start-2 col-end-12 text-center">
-        <h3 className="text-secondarySanJuanBlue text-[32px] font-dmDisplay mb-8 tab:text-5xl">
+      <section className="col-start-2 col-end-12 text-center flex flex-col justify-center items-center gap-8 tab:gap-10 lg:flex-row lg:justify-between">
+        <h3 className="text-secondarySanJuanBlue text-[32px] font-dmDisplay tab:text-5xl">
           Ready to start?
         </h3>
-        <div className="mx-auto relative w-full flex flex-col gap-4 max-w-[445px] tab:flex-row">
+        <div className="relative w-full flex flex-col gap-4 max-w-[445px] tab:flex-row">
           <input
             type="email"
             name="email"
