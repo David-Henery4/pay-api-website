@@ -19,7 +19,6 @@ const Pricing = () => {
             className="flex flex-col justify-center items-center gap-6 lg:items-start"
           >
             {/* HEADER OF A PRICE COLUMN */}
-            {/* pt-4 pb-2 */}
             <div className="lg:text-left md:grid md:grid-rows-priceHeaderRows lg:grid-rows-priceHeaderDeskRows">
               <h3 className="lg:pb-4 md:pb-3 text-2xl font-medium font-dmDisplay text-primaryDarkPink lg:text-[32px]">
                 {plan.planType}
