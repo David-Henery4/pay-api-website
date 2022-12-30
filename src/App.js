@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Navbar, Footer, Sidebar } from "./components";
 import { Home, About, Contact, Pricing } from "./pages";
 
+// DONE: PRICING, HOME
+
 function App() {
   const [isSidebarOpen,setIsSidebarOpen] = useState(false)
   return (
@@ -14,9 +16,9 @@ function App() {
       />
       {/* PAGE CONTENT */}
       {/* <Home /> */}
-      {/* <About/> */}
+      <About/>
       {/* <Contact/> */}
-      <Pricing/>
+      {/* <Pricing/>  */}
       {/**/}
       {/* CTA SECTION */}
       <section className="col-start-2 col-end-12 text-center flex flex-col justify-center items-center gap-8 py-20 tab:py-24 tab:gap-10 lg:flex-row lg:justify-between">

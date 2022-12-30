@@ -26,6 +26,9 @@ import simpleUi from "./home/desktop/illustration-simple-ui.svg"
 import bankingCoverageIcon from "./home/desktop/icon-banking-and-coverage.svg"
 import consumerPaymentsIcon from "./home/desktop/icon-consumer-payments.svg"
 import personalFinancesIcon from "./home/desktop/icon-personal-finances.svg"
+import teamImgMob from "./about/mobile/image-team-members.jpg"
+import teamImgTab from "./about/tablet/image-team-members.jpg"
+import teamImgDesk from "./about/desktop/image-team-members.jpg"
 
 export{
   // SVGS
@@ -56,4 +59,7 @@ export{
   bankingCoverageIcon,
   consumerPaymentsIcon,
   personalFinancesIcon,
+  teamImgDesk,
+  teamImgMob,
+  teamImgTab,
 }
