@@ -5,38 +5,51 @@ import pricingPlan from "../pricing-plan-data/pricingPlan";
 const Pricing = () => {
   return (
     <section className="pt-12 col-start-2 col-end-12 text-center flex flex-col justify-center items-center gap-12">
-      <div>
-        <h2 className="text-[32px] text-secondarySanJuanBlue font-medium font-dmDisplay">
+      <div className="w-full lg:text-left">
+        <h2 className="text-[32px] text-secondarySanJuanBlue font-medium font-dmDisplay md:text-5xl lg:text-[56px]">
           Pricing
         </h2>
       </div>
       {/* PRICING PLANS */}
-      <div className="flex flex-col justify-center items-center gap-12">
+      <div className="flex flex-col justify-center items-center gap-12 md:flex-row md:items-start">
         {/* PRICING PLAN */}
         {pricingPlan.map((plan) => (
-          <div key={plan.id} className="flex flex-col justify-center items-center gap-6">
-            <div>
-              <h3 className="text-2xl font-medium font-dmDisplay text-primaryDarkPink">
+          <div
+            key={plan.id}
+            className="flex flex-col justify-center items-center gap-6 lg:items-start"
+          >
+            {/* HEADER OF A PRICE COLUMN */}
+            {/* pt-4 pb-2 */}
+            <div className="lg:text-left md:grid md:grid-rows-priceHeaderRows lg:grid-rows-priceHeaderDeskRows">
+              <h3 className="lg:pb-4 md:pb-3 text-2xl font-medium font-dmDisplay text-primaryDarkPink lg:text-[32px]">
                 {plan.planType}
               </h3>
-              <p className="pt-4 pb-2 text-secondaryLightSanJuanBlue font-normal text-[15px]">
+              <p className="pt-4 pb-2 md:p-0 text-secondaryLightSanJuanBlue font-normal text-[15px]">
                 {plan.planDescription}
               </p>
-              <p className="text-[56px] text-secondarySanJuanBlue font-medium font-dmDisplay">
+              <p className="leading-none text-[56px] md:text-5xl lg:text-[56px] text-secondarySanJuanBlue font-medium font-dmDisplay">
                 {plan.price}
               </p>
             </div>
-            <div className="w-full border-y border-y-secondarySanJuanBlue/25 grid place-items-center">
-              <ul className="py-12 text-left flex flex-col gap-2">
-                {plan.features.map(features => {
-                  const {id, isIncluded, name} = features
+            <div className="w-full border-y border-y-secondarySanJuanBlue/25 grid place-items-center lg:justify-start">
+              <ul className="py-6 text-left flex flex-col gap-2">
+                {plan.features.map((features) => {
+                  const { id, isIncluded, name } = features;
                   return (
                     <li
                       key={id}
-                      className="flex justify-start items-center gap-6"
+                      className="grid grid-cols-featuresColumns items-center justify-items-center gap-x-6"
                     >
                       <span>{isIncluded && <CheckIcon />}</span>
-                      <p>{name}</p>
+                      <p
+                        className={`justify-self-start font-normal ${
+                          isIncluded
+                            ? "text-secondarySanJuanBlue"
+                            : "text-secondarySanJuanBlue/50"
+                        }`}
+                      >
+                        {name}
+                      </p>
                     </li>
                   );
                 })}

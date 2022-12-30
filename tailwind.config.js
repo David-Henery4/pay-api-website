@@ -17,7 +17,12 @@ module.exports = {
       publicSans: "Public Sans, sans-serif",
     },
     extend: {
+      gridTemplateRows: {
+        priceHeaderRows: "min-content 90px 1fr",
+        priceHeaderDeskRows: "min-content 63px 1fr",
+      },
       gridTemplateColumns: {
+        featuresColumns: "15px 1fr",
         mobColumns: "24px repeat(10,1fr) 24px",
         tabColumns: "40px repeat(10,1fr) 40px",
         deskColumns: "165px repeat(10,1fr) 165px",
