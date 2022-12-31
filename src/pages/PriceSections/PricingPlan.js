@@ -27,7 +27,7 @@ const PricingPlan = ({planType, planDescription,price, features }) => {
                 key={id}
                 className="grid grid-cols-featuresColumns items-center justify-items-center gap-x-6"
               >
-                <span>{isIncluded && <CheckIcon />}</span>
+                <span>{isIncluded && <CheckIcon className="stroke-primaryDarkPink"/>}</span>
                 <p
                   className={`justify-self-start font-normal ${
                     isIncluded

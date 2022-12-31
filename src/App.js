@@ -16,8 +16,8 @@ function App() {
       />
       {/* PAGE CONTENT */}
       {/* <Home /> */}
-      <About/>
-      {/* <Contact/> */}
+      {/* <About/> */}
+      <Contact/>
       {/* <Pricing/>  */}
       {/**/}
       {/* CTA SECTION */}
