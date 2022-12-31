@@ -43,5 +43,7 @@ yarn-error.log*
 .DS_Store
 
 ###########################
+###################################
+## MY IGNORES
 
 notes.notes

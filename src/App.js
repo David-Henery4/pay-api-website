@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Navbar, Footer, Sidebar } from "./components";
 import { Home, About, Contact, Pricing } from "./pages";
 
-// DONE: PRICING, HOME
+// DONE: PRICING, HOME, ABOUT
 
 function App() {
   const [isSidebarOpen,setIsSidebarOpen] = useState(false)
