@@ -5,16 +5,16 @@ const About = () => {
   return (
     <>
       {/* TOP SECTION */}
-      <section className="col-start-2 col-end-12 flex flex-col justify-center items-center gap-10 pt-12 pb-[76px]">
-        <h2 className="text-[32px] leading-9 text-secondarySanJuanBlue font-medium font-dmDisplay text-center">
+      <section className="col-start-2 col-end-12 flex flex-col justify-center items-center gap-10 pt-12 pb-[76px] md:gap-14 md:pt-[75px] md:max-w-[920px] md:mx-auto">
+        <h2 className="text-[32px] leading-9 text-secondarySanJuanBlue font-medium font-dmDisplay text-center md:text-5xl lg:text-left">
           We empower innovators by delivering access to the financial system
         </h2>
         <div className="flex flex-col justify-center items-center gap-12 text-center">
-          <div className="flex flex-col items-center justify-center gap-4">
-            <h3 className="text-2xl font-dmDisplay text-secondarySanJuanBlue">
+          <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:items-start md:w-full md:justify-start md:text-left md:gap-[10px]">
+            <h3 className="text-2xl font-dmDisplay text-secondarySanJuanBlue md:min-w-[223px] md:text-[32px]">
               Our Vision
             </h3>
-            <p>
+            <p className="max-w-[511px] md:max-w-none">
               Our main goal is to build beautiful consumer experiences along
               with developer-friendly infrastructure. The result is an
               intelligent tool that gives everyone the ability to create amazing
@@ -22,11 +22,11 @@ const About = () => {
               democratizing financial services through technology.{" "}
             </p>
           </div>
-          <div className="flex flex-col items-center justify-center gap-4">
-            <h3 className="text-2xl font-dmDisplay text-secondarySanJuanBlue">
+          <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:items-start md:w-full md:justify-start md:text-left md:gap-[10px]">
+            <h3 className="text-2xl font-dmDisplay text-secondarySanJuanBlue md:min-w-[223px] md:text-[32px]">
               Our Business
             </h3>
-            <p>
+            <p className="max-w-[511px] md:max-w-none">
               At the core of our platform is the technical infrastructure APIs
               that connect consumers. Our innovative product provides key
               insights for businesses and individuals, as well as robust
@@ -49,20 +49,20 @@ const About = () => {
         </picture>
       </div>
       {/* BOTTOM SECTIONS */}
-      <section className="py-4 border-y border-y-secondarySanJuanBlue/25 col-start-2 col-end-12 flex flex-col justify-center items-center gap-8">
-        <div className="grid place-items-center">
+      <section className="py-4 border-y border-y-secondarySanJuanBlue/25 col-start-2 col-end-12 flex flex-col justify-center items-center gap-8 md:flex-row md:gap-[10px] md:border-y-0">
+        <div className="grid place-items-center md:w-full md:justify-items-start md:border-y md:border-y-secondarySanJuanBlue/25 md:py-4">
           <h4>Team Members</h4>
           <p className="text-[56px] text-primaryDarkPink font-dmDisplay leading-[72px]">
             300+
           </p>
         </div>
-        <div className="grid place-items-center">
+        <div className="grid place-items-center md:w-full md:justify-items-start md:border-y md:border-y-secondarySanJuanBlue/25 md:py-4">
           <h4>Offices in the US</h4>
           <p className="text-[56px] text-primaryDarkPink font-dmDisplay leading-[72px]">
             3
           </p>
         </div>
-        <div className="grid place-items-center">
+        <div className="grid place-items-center md:w-full md:justify-items-start md:border-y md:border-y-secondarySanJuanBlue/25 md:py-4">
           <h4>Transactions analyzed</h4>
           <p className="text-[56px] text-primaryDarkPink font-dmDisplay leading-[72px]">
             10M+
@@ -70,12 +70,12 @@ const About = () => {
         </div>
       </section>
       {/**/}
-      <section className="col-start-2 col-end-12 flex flex-col justify-center items-center gap-12 text-center pt-12">
-        <div className="flex flex-col items-center justify-center gap-4">
-          <h3 className="text-2xl font-dmDisplay text-secondarySanJuanBlue">
+      <section className="col-start-2 col-end-12 flex flex-col justify-center items-center gap-12 text-center pt-12 md:max-w-[920px] md:mx-auto">
+        <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:items-start md:w-full md:justify-start md:text-left md:gap-[10px]">
+          <h3 className="text-2xl font-dmDisplay text-secondarySanJuanBlue md:min-w-[223px] md:text-[32px]">
             The Culture
           </h3>
-          <p>
+          <p className="max-w-[511px] md:max-w-none">
             We strongly believe there's always an opportunity to learn from each
             other outside of day-to-day work, whether it's company-wide
             offsites, internal hackathons, or co-worker meetups. We always value
@@ -83,11 +83,11 @@ const About = () => {
             title.
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center gap-4">
-          <h3 className="text-2xl font-dmDisplay text-secondarySanJuanBlue">
+        <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:items-start md:w-full md:justify-start md:text-left md:gap-[10px]">
+          <h3 className="text-2xl font-dmDisplay text-secondarySanJuanBlue md:min-w-[223px] md:text-[32px]">
             The People
           </h3>
-          <p>
+          <p className="max-w-[511px] md:max-w-none">
             We're all passionate about building a more efficient and inclusive
             financial infrastructure together. At PayAPI, we have diverse
             backgrounds and skills.
