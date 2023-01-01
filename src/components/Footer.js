@@ -15,15 +15,17 @@ const Footer = () => {
             {/* WILL BE NAVLINKS */}
             {navData.map((navLink) => (
               <li key={navLink.id}>
-                <a href={navLink.path}>{navLink.name}</a>
+                <Link to={navLink.path} className="hover:text-primaryDarkPink">
+                {navLink.name}
+                </Link>
               </li>
             ))}
           </ul>
         </div>
         <div className="flex gap-6 items-center justify-center">
-          <FacebookIcon />
-          <TwitterIcon />
-          <LinkedinIcon />
+          <FacebookIcon className="hover:cursor-pointer hover:fill-primaryDarkPink  fill-primaryWaterWhite" />
+          <TwitterIcon className="hover:fill-primaryDarkPink hover:cursor-pointer fill-primaryWaterWhite" />
+          <LinkedinIcon className="hover:fill-primaryDarkPink hover:cursor-pointer fill-primaryWaterWhite" />
         </div>
       </div>
     </footer>
