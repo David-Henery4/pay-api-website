@@ -11,6 +11,7 @@ module.exports = {
       secondaryLightSanJuanBlue: "#6c8294",
       secondaryMirageBlue: "#1b262f",
       secondaryCharmPink: "#da6d97",
+      errorRed: "#FF0000",
     },
     fontFamily: {
       dmDisplay: "DM Serif Display, serif",
