@@ -3,24 +3,21 @@
 }
 
 .checkbox-input{
-  width: 1.15em;
-  height: 1.15em;
+  width: 24px;
+  height: 24px;
   appearance: none;
   background-color: rgba(#36536b, .25);
-  border-radius: 0.15em;
-  // transform: translateY(-0.075em);
   display: grid;
   place-content: center;
+  z-index: 10;
 }
 
 .checkbox-input::before{
   content: "";
-  width: 1.15em;
-  height: 1.15em;
+  width: 24px;
+  height: 24px;
   opacity: 0;
-  // transform: scale(0);
-  // transition: 100ms transform ease-in-out;
-  box-shadow: inset 1em 1em #ba4270;
+  box-shadow: inset 1.5em 1.5em #ba4270;
 }
 
 .checkbox-icon{
@@ -32,6 +29,8 @@
 }
 
 .checkbox-input:checked::before{
-  // transform: scale(1);
   opacity: 1;
 }
+
+
+
