@@ -3,17 +3,17 @@ const navData = [
   {
     id: 1,
     name: "Pricing",
-    path: "/",
+    path: "pricing",
   },
   {
     id: 2,
     name: "About",
-    path: "/",
+    path: "about",
   },
   {
     id: 3,
     name: "Contact",
-    path: "/",
+    path: "contact",
   },
 ];
 

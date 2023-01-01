@@ -1,18 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Burger, Logo } from "../assets";
 import navData from "../navigation/navData";
 
-const Navbar = ({setIsSidebarOpen}) => {
-  
+const Navbar = ({ setIsSidebarOpen }) => {
   //
   return (
     <nav className="pt-10 w-full flex justify-between items-center col-start-2 col-end-12">
       <div className="flex justify-center items-center gap-16">
-        <Logo className="fill-secondarySanJuanBlue" />
+        <Link to="/">
+          <Logo className="fill-secondarySanJuanBlue" />
+        </Link>
         <ul className="md:flex gap-10 hidden">
           {navData.map((linkItem) => (
-            <li key={linkItem.id}>
-              <a href={linkItem.path}>{linkItem.name}</a>
+            <li
+              className="hover:text-secondarySanJuanBlue font-medium"
+              key={linkItem.id}
+            >
+              <Link to={linkItem.path}>{linkItem.name}</Link>
             </li>
           ))}
         </ul>
