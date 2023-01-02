@@ -1,5 +1,5 @@
 import React from 'react'
-import { simpleUi, easyImplementation, SimpleUi, EasyImplementation, CodeSvg , codeSvg, twoPhones, TwoPhones} from "../../assets";
+import { codeSvg,  TwoPhones, BgPattern} from "../../assets";
 
 const Description = () => {
   return (
@@ -20,8 +20,9 @@ const Description = () => {
         </div>
       </div>
       {/**/}
-      <div className="flex flex-col justify-between items-center lg:flex-row-reverse gap-12">
-        <div className="desk:w-full w-full max-w-[363px] desk:max-w-[566px]">
+      <div className="relative flex flex-col justify-between items-center lg:flex-row-reverse gap-12">
+        <BgPattern className='hidden lg:block pointer-events-none absolute w-[780px] h-[780px] lg:left-[88%] desk:left-[80%]'/>
+        <div className="relative z-10 desk:w-full w-full max-w-[363px] desk:max-w-[566px]">
           <TwoPhones className='rounded-[8%]'/>
         </div>
         <div className="flex flex-col gap-6 justify-center items-center max-w-[573px] lg:text-left lg:max-w-[445px]">

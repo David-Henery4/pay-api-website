@@ -1,4 +1,5 @@
 add background patterns
+MAKE SURE ITEMS ARE ABOVE THE CIRCLES WITH THE Z-INDEX!!! &(pointer-events:none on all CIRCLES)
 max-width: 1440px = on main grids
 fix sidebar
 check hover states
