@@ -1,26 +1,27 @@
 import React, { useEffect, useState } from "react";
-import { phoneMockup, PhoneMockup } from "../../assets";
+import { PhoneMockup } from "../../assets";
+import useEmailValidation from "../../validation/useEmailValidation";
+import checkForValueToHideLabel from "../../validation/checkValueHideLabel";
 
 const Header = () => {
   const [email,setEmail] = useState("")
   const [doesEmailHaveValue,setDoesEmailHaveValue] = useState(false)
   //
-  const handleEmailSubmit = (e) => {
+  const handleEmailForValidation = (e) => {
     e.preventDefault()
-    console.log(email)
+    validateEmail(email)
   }
   //
-  const checkForValueToHideLabel = () => {
-    if(email.trim() !== "" && email.trim().length >=1 ){
-      setDoesEmailHaveValue(true)
-    }
-    if(email.trim() === "" && email.trim().length <= 0){
-      setDoesEmailHaveValue(false)
-    }
+  const handleFinalEmailSubmit = (finalEmail) => {
+    console.log("Thank you for submiting a request :)")
+    setEmail("")
   }
+  //
+  const {emailError, validateEmail} = useEmailValidation(handleFinalEmailSubmit)
   //
   useEffect(() => {
-    checkForValueToHideLabel()
+    const result  = checkForValueToHideLabel(email)
+    setDoesEmailHaveValue(result)
   }, [email])
   //
   return (
@@ -33,12 +34,12 @@ const Header = () => {
           Start building with our APIs for absolutely free.
         </h1>
         <form
-          onSubmit={(e) => handleEmailSubmit(e)}
+          onSubmit={(e) => handleEmailForValidation(e)}
           className="relative w-full flex flex-col gap-4 max-w-[445px] tab:flex-row"
         >
           <input
             id="email"
-            type="email"
+            type="text"
             name="email"
             aria-describedby="Enter email to schedule a demo"
             className="peer h-12 w-full px-7 py-3 rounded-3xl text-sm font-semibold tab:pr-48 outline-none"
@@ -60,6 +61,9 @@ const Header = () => {
           >
             Schedule a Demo
           </button>
+        {emailError.isEmailError && (
+          <p className="absolute -bottom-5 left-0 text-[11px] text-errorRed px-7">{emailError.msg}</p>
+        )}
         </form>
         <p className="lg:px-7">
           Have any questions?
