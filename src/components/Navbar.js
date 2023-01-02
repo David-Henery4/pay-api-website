@@ -6,7 +6,7 @@ import navData from "../navigation/navData";
 const Navbar = ({ setIsSidebarOpen }) => {
   //
   return (
-    <nav className="pt-10 w-full flex justify-between items-center col-start-2 col-end-12">
+    <nav className="relative z-10 pt-10 w-full flex justify-between items-center col-start-2 col-end-12">
       <div className="flex justify-center items-center gap-16">
         <Link to="/">
           <Logo className="fill-secondarySanJuanBlue" />
