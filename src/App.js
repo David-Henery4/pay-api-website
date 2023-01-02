@@ -6,7 +6,7 @@ import {SharedCta} from "./pages/SharedSections";
 function App() {
   const [isSidebarOpen,setIsSidebarOpen] = useState(false)
   return (
-    <main className="App bg-mainBgChilledWhite text-secondaryLightSanJuanBlue grid grid-cols-mobColumns sm:grid-cols-tabColumns xl:grid-cols-deskColumns">
+    <main className="App bg-mainBgChilledWhite text-secondaryLightSanJuanBlue grid grid-cols-mobColumns sm:grid-cols-tabColumns xl:grid-cols-deskColumns overflow-hidden">
       {/* NAVBAR */}
       <Navbar setIsSidebarOpen={setIsSidebarOpen} />
       <Sidebar

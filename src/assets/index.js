@@ -17,6 +17,7 @@ import {ReactComponent as CodeSvg} from "./home/desktop/code-svg.svg"
 import {ReactComponent as TwoPhones} from "./home/desktop/two-phones.svg"
 import {ReactComponent as CloseIcon} from "./shared/mobile/close.svg"
 import {ReactComponent as CheckIcon} from "./shared/desktop/icon-check.svg"
+import {ReactComponent as BgPattern} from "./shared/desktop/bg-pattern-circle.svg"
 // IMGS
 import twoPhones from "./home/desktop/two-phones.svg"
 import codeSvg from "./home/desktop/code-svg.svg"
@@ -50,6 +51,7 @@ export{
   TwoPhones,
   CloseIcon,
   CheckIcon,
+  BgPattern,
   // IMAGES
   twoPhones,
   codeSvg,
