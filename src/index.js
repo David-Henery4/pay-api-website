@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import "./styles/styles.scss"
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Home, About, Contact, Pricing } from "./pages";
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import { Home, About, Contact, Pricing} from "./pages";
 
 
 
@@ -17,6 +17,7 @@ root.render(
           <Route path='about' element={<About/>}/>
           <Route path='pricing' element={<Pricing/>}/>
           <Route path='contact' element={<Contact/>}/>
+          <Route path='*' element={<Navigate to="/"/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

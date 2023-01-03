@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import checkForValueToHideLabel from '../../validation/checkValueHideLabel'
 import useEmailValidation from '../../validation/useEmailValidation'
 
 const SharedCta = () => {
+  const {pathname} = useLocation()
   const [email,setEmail] = useState("")
   const [doesEmailHaveValue, setDoesEmailHaveValue] = useState(false)
   //
@@ -22,6 +24,10 @@ const SharedCta = () => {
     const result = checkForValueToHideLabel(email)
     setDoesEmailHaveValue(result)
   },[email])
+  //
+  useEffect(() => {
+    console.log(pathname)
+  },[])
   //
   return (
     <section className="col-start-2 col-end-12 text-center flex flex-col justify-center items-center gap-8 py-20 tab:py-24 tab:gap-10 lg:flex-row lg:justify-between">

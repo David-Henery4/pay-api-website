@@ -3,6 +3,7 @@ import { Navbar, Footer, Sidebar } from "./components";
 import { Outlet, useLocation } from "react-router-dom";
 import { SharedCta } from "./pages/SharedSections";
 
+// SCROLL TO TOP AFTER NAVIGATION
 const Wrapper = ({ children }) => {
   const location = useLocation();
   useLayoutEffect(() => {
