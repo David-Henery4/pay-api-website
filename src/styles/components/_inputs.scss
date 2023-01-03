@@ -1,0 +1,17 @@
+
+
+
+// FOR EMAIL INPUTS
+.input-auto-email:-webkit-autofill,
+.input-auto-email:-webkit-autofill:hover, 
+.input-auto-email:-webkit-autofill:focus {
+  -webkit-text-fill-color: #36536B;
+  -webkit-box-shadow: 0 0 0px 40rem #fbfcfe inset;
+}
+// FOR FORM INPUTS
+.input-auto-form:-webkit-autofill,
+.input-auto-form:-webkit-autofill:hover, 
+.input-auto-form:-webkit-autofill:focus {
+  -webkit-text-fill-color: #36536B;
+  -webkit-box-shadow: 0 0 0px 40rem #EDF3F8 inset;
+}

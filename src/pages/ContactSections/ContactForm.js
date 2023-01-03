@@ -50,7 +50,7 @@ const ContactForm = () => {
     >
       <div className="w-full grid gap-2">
         <input
-          className={`first:pt-0 pl-5 w-full py-6 bg-mainBgChilledWhite/0 border-b border-b-secondarySanJuanBlue/50 outline-none ${
+          className={`input-auto-form text-secondarySanJuanBlue first:pt-0 pl-5 w-full py-6 bg-mainBgChilledWhite/0 border-b border-b-secondarySanJuanBlue/50 outline-none  ${
             nameError.isNameError && "placeholder:text-errorRed"
           } `}
           type="text"
@@ -67,7 +67,7 @@ const ContactForm = () => {
       </div>
       <div className="w-full grid gap-2">
         <input
-          className={`pl-5 w-full py-6 bg-mainBgChilledWhite/0 border-b border-b-secondarySanJuanBlue/50 outline-none ${
+          className={`input-auto-form text-secondarySanJuanBlue  pl-5 w-full py-6 bg-mainBgChilledWhite/0 border-b border-b-secondarySanJuanBlue/50 outline-none ${
             emailError.isEmailError && "placeholder:text-errorRed"
           } `}
           type="text"
@@ -84,7 +84,7 @@ const ContactForm = () => {
       </div>
       <div className="w-full grid gap-2">
         <input
-          className={`pl-5 w-full py-6 bg-mainBgChilledWhite/0 border-b border-b-secondarySanJuanBlue/50 outline-none ${
+          className={`input-auto-form text-secondarySanJuanBlue  pl-5 w-full py-6 bg-mainBgChilledWhite/0 border-b border-b-secondarySanJuanBlue/50 outline-none ${
             companyError.isCompanyError && "placeholder:text-errorRed"
           } `}
           type="text"
@@ -101,7 +101,7 @@ const ContactForm = () => {
       </div>
       <div className="w-full grid gap-2">
         <input
-          className={`pl-5 w-full py-6 bg-mainBgChilledWhite/0 border-b border-b-secondarySanJuanBlue/50 outline-none ${
+          className={`input-auto-form text-secondarySanJuanBlue pl-5 w-full py-6 bg-mainBgChilledWhite/0 border-b border-b-secondarySanJuanBlue/50 outline-none ${
             titleError.isTitleError && "placeholder:text-errorRed"
           } `}
           type="text"
@@ -118,7 +118,7 @@ const ContactForm = () => {
       </div>
       <div className="w-full grid gap-2">
         <textarea
-          className={`w-full py-6 bg-mainBgChilledWhite/0 border-b border-b-secondarySanJuanBlue/50 outline-none resize-none pl-5 ${
+          className={`input-auto-form text-secondarySanJuanBlue  w-full py-6 bg-mainBgChilledWhite/0 border-b border-b-secondarySanJuanBlue/50 outline-none resize-none pl-5 ${
             messageError.isMessageError && "placeholder:text-errorRed"
           } `}
           name="message"
@@ -140,9 +140,12 @@ const ContactForm = () => {
             name="checkbox"
             id="checkbox"
             type="checkbox"
-            className="checkbox-input"
+            className="checkbox-input hover:cursor-pointer"
             onChange={(e) => {
-              setFormValues({ ...formValues, isOptedIn: !formValues.isOptedIn });
+              setFormValues({
+                ...formValues,
+                isOptedIn: !formValues.isOptedIn,
+              });
             }}
             checked={formValues.isOptedIn}
           />

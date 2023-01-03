@@ -2,6 +2,7 @@ import React from "react";
 import pricingPlanData from "../pricing-plan-data/pricingPlanData";
 import { PricingPlan } from "./PriceSections";
 
+
 const Pricing = () => {
   return (
     <section className="pt-12 col-start-2 col-end-12 text-center flex flex-col justify-center items-center gap-12">

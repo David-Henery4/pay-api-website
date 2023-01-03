@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { PhoneMockup, BgPattern } from "../../assets";
 import useEmailValidation from "../../validation/useEmailValidation";
 import checkForValueToHideLabel from "../../validation/checkValueHideLabel";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [email, setEmail] = useState("");
@@ -45,7 +46,7 @@ const Header = () => {
             type="text"
             name="email"
             aria-describedby="Enter email to schedule a demo"
-            className="peer h-12 w-full px-7 py-3 rounded-3xl text-sm font-semibold tab:pr-48 outline-none"
+            className="input-auto-email peer h-12 w-full px-7 py-3 rounded-3xl text-sm text-secondarySanJuanBlue bg-primaryWaterWhite font-semibold tab:pr-48 outline-none"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -72,7 +73,10 @@ const Header = () => {
         </form>
         <p className="lg:px-7">
           Have any questions?
-          <span className="font-semibold"> Contact Us</span>
+          <Link className="font-semibold hover:text-secondarySanJuanBlue" to="/contact">
+            {" "}
+            Contact Us
+          </Link>
         </p>
       </div>
     </header>

@@ -1,13 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Burger, Logo } from "../assets";
 import navData from "../navigation/navData";
+import { BgPattern } from "../assets";
 
 const Navbar = ({ setIsSidebarOpen }) => {
+  const { pathname } = useLocation();
   //
   return (
     <nav className="relative z-10 pt-10 w-full flex justify-between items-center col-start-2 col-end-12">
-      <div className="flex justify-center items-center gap-16">
+      <div className="relative z-10 flex justify-center items-center gap-16">
         <Link to="/">
           <Logo className="fill-secondarySanJuanBlue" />
         </Link>
@@ -22,7 +24,12 @@ const Navbar = ({ setIsSidebarOpen }) => {
           ))}
         </ul>
       </div>
-      <div>
+      <div className="relative">
+        <BgPattern
+          className={`absolute -z-10 pointer-events-none w-[780px] h-[780px] -left-[150px] -top-[635px] md:-left-[80px] md:-top-[540px] lg:-left-[290px] lg:-top-[590px] ${
+            pathname === "/" && "hidden"
+          } ${pathname === "/pricing" && "lg:-left-[430px] lg:-top-[620px]"}`}
+        />
         <Burger
           className="hover:cursor-pointer md:hidden"
           onClick={() => setIsSidebarOpen(true)}

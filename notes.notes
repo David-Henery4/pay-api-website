@@ -1,7 +1,10 @@
-add background patterns
-MAKE SURE ITEMS ARE ABOVE THE CIRCLES WITH THE Z-INDEX!!! &(pointer-events:none on all CIRCLES)
-max-width: 1440px = on main grids
-fix sidebar
-check hover states
+
+
 404 page
-MAYBE SORT SCROLL BEHAVOUR ON BOTTOM LOGO LINK 
+MAYBE SORT SCROLL BEHAVOUR ON BOTTOM LOGO LINK
+max-width: 1440px = on main grids
+
+
+
+TO START TO DO:
+

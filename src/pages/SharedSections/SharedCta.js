@@ -37,7 +37,7 @@ const SharedCta = () => {
           type="text"
           name="email"
           aria-describedby="Enter email to schedule a demo"
-          className="peer h-12 w-full px-7 py-3 rounded-3xl text-sm font-semibold tab:pr-48 outline-none"
+          className="input-auto-email text-secondarySanJuanBlue peer h-12 w-full px-7 py-3 rounded-3xl text-sm font-semibold tab:pr-48 outline-none"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
