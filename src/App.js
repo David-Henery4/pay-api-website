@@ -15,7 +15,7 @@ const Wrapper = ({ children }) => {
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   return (
-    <main className="App bg-mainBgChilledWhite text-secondaryLightSanJuanBlue grid grid-cols-mobColumns sm:grid-cols-tabColumns xl:grid-cols-deskColumns overflow-hidden">
+    <main className="App min-h-screen bg-mainBgChilledWhite text-secondaryLightSanJuanBlue grid grid-cols-mobColumns sm:grid-cols-tabColumns xl:grid-cols-deskColumns overflow-hidden">
       <Wrapper>
         {/* NAVBAR */}
         <Navbar setIsSidebarOpen={setIsSidebarOpen} />

@@ -8,7 +8,7 @@ const Navbar = ({ setIsSidebarOpen }) => {
   const { pathname } = useLocation();
   //
   return (
-    <nav className="relative z-10 pt-10 w-full flex justify-between items-center col-start-2 col-end-12">
+    <nav className="max-w-maxContentWidth mx-auto relative z-10 pt-10 w-full flex justify-between items-center col-start-2 col-end-12">
       <div className="relative z-10 flex justify-center items-center gap-16">
         <Link to="/">
           <Logo className="fill-secondarySanJuanBlue" />

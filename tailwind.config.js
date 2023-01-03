@@ -33,6 +33,9 @@ module.exports = {
         tab: "680px",
         desk: "1150px",
       },
+      maxWidth: {
+        maxContentWidth: "1110px",
+      }
     },
   },
   plugins: [],

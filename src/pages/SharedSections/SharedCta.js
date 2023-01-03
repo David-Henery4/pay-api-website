@@ -30,7 +30,7 @@ const SharedCta = () => {
   },[])
   //
   return (
-    <section className="col-start-2 col-end-12 text-center flex flex-col justify-center items-center gap-8 py-20 tab:py-24 tab:gap-10 lg:flex-row lg:justify-between">
+    <section className="max-w-maxContentWidth mx-auto w-full col-start-2 col-end-12 text-center flex flex-col justify-center items-center gap-8 py-20 tab:py-24 tab:gap-10 lg:flex-row lg:justify-between">
       <h3 className="text-secondarySanJuanBlue text-[32px] font-dmDisplay tab:text-5xl">
         Ready to start?
       </h3>
