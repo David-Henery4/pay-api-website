@@ -30,9 +30,7 @@ const Header = () => {
   return (
     <header className="max-w-maxContentWidth mx-auto w-full col-start-2 col-end-12 flex flex-col justify-center items-center gap-6 pt-8 pb-20 tab:pt-12 tab:pb-[100px] lg:py-[75px] tab:gap-12 lg:flex-row-reverse xl:justify-end desk:gap-[8vw]">
       <div className="relative w-full xl:max-w-[262px] xl:mx-auto grid place-items-center">
-        <BgPatternOne
-          className="h-[780px] w-[780px] absolute bottom-[47%] md:w-[949px] md:h-[949px] lg:h-[780px] lg:w-[780px]  lg:bottom-14 lg:-left-4 xl:-left-[115px] pointer-events-none"
-        />
+        <BgPatternOne className="h-[780px] w-[780px] absolute bottom-[47%] md:w-[949px] md:h-[949px] lg:h-[780px] lg:w-[780px]  lg:bottom-14 lg:-left-4 xl:-left-[115px] pointer-events-none" />
         <PhoneMockup className="w-full h-[64vw] max-h-[300px] lg:max-h-[500px] relative z-10" />
       </div>
       <div className="w-full flex flex-col justify-center items-center text-center gap-6 lg:items-start lg:text-left xl:max-w-[546px]">
@@ -61,7 +59,7 @@ const Header = () => {
           )}
           <button
             aria-label="Submit button with a email to schedule a demo"
-            className="text-primaryWaterWhite primary-btn h-12 w-full tab:w-44 tab:absolute tab:top-0 tab:right-0"
+            className="text-primaryWaterWhite primary-btn h-12 w-full tab:w-44 tab:absolute tab:top-0 tab:right-0 active:bg-primaryDarkPink"
             type="submit"
           >
             Schedule a Demo

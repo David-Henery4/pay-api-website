@@ -13,9 +13,7 @@ const Footer = () => {
   return (
     <footer className="overflow-hidden bg-secondaryMirageBlue py-8 col-start-1 col-end-13 grid grid-cols-mobColumns sm:grid-cols-tabColumns xl:grid-cols-deskColumns">
       <div className="max-w-maxContentWidth mx-auto w-full relative col-start-2 col-end-12 flex flex-col justify-center items-center gap-10 md:flex-row md:justify-between">
-        <BgPatternFour
-          className="pointer-events-none absolute w-[780px] h-[780px] top-1/2 md:-top-[375%] md:left-[39%] lg:-top-[300%] lg:left-[70%]"
-        />
+        <BgPatternFour className="pointer-events-none absolute w-[780px] h-[780px] top-1/2 md:-top-[375%] md:left-[39%] lg:-top-[300%] lg:left-[70%]" />
         <div className="relative z-10 flex flex-col justify-center items-center gap-10 md:flex-row lg:gap-16">
           <Link aria-label="footer logo link to the home page" to="/">
             <Logo className="fill-primaryWaterWhite" />
@@ -26,7 +24,7 @@ const Footer = () => {
               <li key={navLink.id}>
                 <Link
                   to={navLink.path}
-                  className="hover:text-primaryWaterWhite"
+                  className="hover:text-primaryWaterWhite active:text-primaryWaterWhite/70"
                 >
                   <p>{navLink.name}</p>
                 </Link>

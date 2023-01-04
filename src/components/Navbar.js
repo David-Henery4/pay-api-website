@@ -17,7 +17,7 @@ const Navbar = ({ setIsSidebarOpen }) => {
         <ul className="md:flex gap-10 hidden">
           {navData.map((linkItem) => (
             <li
-              className="hover:text-secondarySanJuanBlue font-medium"
+              className="hover:text-secondarySanJuanBlue font-medium active:text-secondaryLightSanJuanBlue"
               key={linkItem.id}
             >
               <Link to={linkItem.path}>{linkItem.name}</Link>
@@ -35,7 +35,7 @@ const Navbar = ({ setIsSidebarOpen }) => {
           className="hover:cursor-pointer md:hidden"
           onClick={() => setIsSidebarOpen(true)}
         />
-        <button className="md:block hidden primary-btn h-12 w-44 text-primaryWaterWhite">
+        <button className="md:block hidden primary-btn h-12 w-44 text-primaryWaterWhite active:bg-primaryDarkPink">
           Schedule a Demo
         </button>
       </div>

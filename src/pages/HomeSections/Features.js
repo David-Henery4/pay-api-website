@@ -9,7 +9,7 @@ const Features = () => {
   return (
     <section className="max-w-maxContentWidth mx-auto w-full col-start-2 col-end-12 flex flex-col justify-center items-center text-center gap-12 md:flex-row md:items-start">
       <div className="flex flex-col justify-center items-center gap-8 md:w-4/12">
-        <img src={personalFinancesIcon} alt="personal-finances" />
+        <img src={personalFinancesIcon} alt="" aria-hidden={true} />
         <div>
           <h4 className="text-lg font-semibold text-secondarySanJuanBlue mb-4">
             Personal Finances
@@ -22,7 +22,7 @@ const Features = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center gap-8 md:w-4/12">
-        <img src={bankingCoverageIcon} alt="banking-coverage" />
+        <img src={bankingCoverageIcon} alt="" aria-hidden={true} />
         <div>
           <h4 className="text-lg font-semibold text-secondarySanJuanBlue mb-4">
             Banking & Coverage
@@ -35,7 +35,7 @@ const Features = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center gap-8 md:w-4/12">
-        <img src={consumerPaymentsIcon} alt="consumer-payments" />
+        <img src={consumerPaymentsIcon} alt="" aria-hidden={true} />
         <div>
           <h4 className="text-lg font-semibold text-secondarySanJuanBlue mb-4">
             Consumer Payments

@@ -11,6 +11,12 @@
   }
   
   .secondary-query-btn{
-    @apply w-[152px] h-12 rounded-3xl font-medium text-secondarySanJuanBlue border border-b-secondarySanJuanBlue hover:bg-secondarySanJuanBlue hover:text-primaryWaterWhite
+    @apply w-[152px] h-12 rounded-3xl font-medium text-secondarySanJuanBlue border border-b-secondarySanJuanBlue
+  }
+  .secondary-query-btn:hover{
+    @apply text-primaryWaterWhite bg-secondarySanJuanBlue border-0
+  }
+  .secondary-query-btn:active{
+    @apply text-secondarySanJuanBlue border-b-secondarySanJuanBlue bg-opacity-0 border
   }
 }

@@ -49,10 +49,14 @@ const ContactForm = () => {
       onSubmit={(e) => handleSubmitPreCheck(e)}
     >
       <div className="w-full grid gap-2">
+        <label htmlFor="name" className="sr-only">
+          Name
+        </label>
         <input
           className={`input-auto-form text-secondarySanJuanBlue first:pt-0 pl-5 w-full py-6 bg-mainBgChilledWhite/0 border-b border-b-secondarySanJuanBlue/50 outline-none  ${
             nameError.isNameError && "placeholder:text-errorRed"
           } `}
+          id="name"
           type="text"
           placeholder="Name"
           value={formValues.name}
@@ -66,10 +70,14 @@ const ContactForm = () => {
         )}
       </div>
       <div className="w-full grid gap-2">
+        <label htmlFor="email" className="sr-only">
+          email
+        </label>
         <input
           className={`input-auto-form text-secondarySanJuanBlue  pl-5 w-full py-6 bg-mainBgChilledWhite/0 border-b border-b-secondarySanJuanBlue/50 outline-none ${
             emailError.isEmailError && "placeholder:text-errorRed"
           } `}
+          id="email"
           type="text"
           placeholder="Email Address"
           value={formValues.email}
@@ -83,10 +91,14 @@ const ContactForm = () => {
         )}
       </div>
       <div className="w-full grid gap-2">
+        <label htmlFor="companyName" className="sr-only">
+          Company Name
+        </label>
         <input
           className={`input-auto-form text-secondarySanJuanBlue  pl-5 w-full py-6 bg-mainBgChilledWhite/0 border-b border-b-secondarySanJuanBlue/50 outline-none ${
             companyError.isCompanyError && "placeholder:text-errorRed"
           } `}
+          id="companyName"
           type="text"
           placeholder="Company Name"
           value={formValues.companyName}
@@ -100,10 +112,14 @@ const ContactForm = () => {
         )}
       </div>
       <div className="w-full grid gap-2">
+        <label htmlFor="title" className="sr-only">
+          title
+        </label>
         <input
           className={`input-auto-form text-secondarySanJuanBlue pl-5 w-full py-6 bg-mainBgChilledWhite/0 border-b border-b-secondarySanJuanBlue/50 outline-none ${
             titleError.isTitleError && "placeholder:text-errorRed"
           } `}
+          id="title"
           type="text"
           placeholder="Title"
           value={formValues.title}
@@ -117,6 +133,9 @@ const ContactForm = () => {
         )}
       </div>
       <div className="w-full grid gap-2">
+        <label htmlFor="message" className="sr-only">
+          message
+        </label>
         <textarea
           className={`input-auto-form text-secondarySanJuanBlue  w-full py-6 bg-mainBgChilledWhite/0 border-b border-b-secondarySanJuanBlue/50 outline-none resize-none pl-5 ${
             messageError.isMessageError && "placeholder:text-errorRed"
@@ -135,7 +154,7 @@ const ContactForm = () => {
         )}
       </div>
       <div className="w-full flex justify-center items-center py-6 gap-6">
-        <label className="checkbox-label">
+        <label aria-label="checkbox for opting in" className="checkbox-label">
           <input
             name="checkbox"
             id="checkbox"

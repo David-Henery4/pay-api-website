@@ -50,7 +50,7 @@ const SharedCta = () => {
         )}
         <button
           aria-label="Submit button with a email to schedule a demo"
-          className="text-primaryWaterWhite primary-btn h-12 w-full tab:w-44 tab:absolute tab:top-0 tab:right-0"
+          className="text-primaryWaterWhite primary-btn h-12 w-full tab:w-44 tab:absolute tab:top-0 tab:right-0 active:bg-primaryDarkPink"
           type="submit"
         >
           Schedule a Demo
