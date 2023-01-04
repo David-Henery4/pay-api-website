@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Logo, TwitterIcon, FacebookIcon, LinkedinIcon, BgPattern } from "../assets";
+import {
+  Logo,
+  TwitterIcon,
+  FacebookIcon,
+  LinkedinIcon,
+  BgPattern,
+} from "../assets";
 import BgPatternWrapper from "../assets/cloneBgPattern";
 import navData from "../navigation/navData";
 
