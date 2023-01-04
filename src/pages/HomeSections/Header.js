@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { PhoneMockup, BgPattern } from "../../assets";
+import { PhoneMockup, BgPattern, } from "../../assets";
+import BgPatternWrapper from "../../assets/cloneBgPattern";
 import useEmailValidation from "../../validation/useEmailValidation";
 import checkForValueToHideLabel from "../../validation/checkValueHideLabel";
 import { Link } from "react-router-dom";
@@ -30,7 +31,12 @@ const Header = () => {
   return (
     <header className="max-w-maxContentWidth mx-auto w-full col-start-2 col-end-12 flex flex-col justify-center items-center gap-6 pt-8 pb-20 tab:pt-12 tab:pb-[100px] lg:py-[75px] tab:gap-12 lg:flex-row-reverse xl:justify-end desk:gap-[8vw]">
       <div className="relative w-full xl:max-w-[262px] xl:mx-auto grid place-items-center">
-        <BgPattern className="h-[780px] w-[780px] absolute bottom-[47%] md:w-[949px] md:h-[949px] lg:h-[780px] lg:w-[780px]  lg:bottom-14 lg:-left-4 xl:-left-[115px] pointer-events-none" />
+        <BgPatternWrapper
+          className="h-[780px] w-[780px] absolute bottom-[47%] md:w-[949px] md:h-[949px] lg:h-[780px] lg:w-[780px]  lg:bottom-14 lg:-left-4 xl:-left-[115px] pointer-events-none"
+          id="svg1"
+          idone="one"
+          idtwo="two"
+        />
         <PhoneMockup className="w-full h-[64vw] max-h-[300px] lg:max-h-[500px] relative z-10" />
       </div>
       <div className="w-full flex flex-col justify-center items-center text-center gap-6 lg:items-start lg:text-left xl:max-w-[546px]">
