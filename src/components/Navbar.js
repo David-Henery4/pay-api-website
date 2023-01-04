@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Burger, Logo } from "../assets";
 import navData from "../navigation/navData";
-import { BgPattern } from "../assets";
+import { BgPatternSix } from "../assets";
 import BgPatternWrapper from "../assets/cloneBgPattern";
 // id="svg5"
 // idone="nine"
@@ -29,13 +29,10 @@ const Navbar = ({ setIsSidebarOpen }) => {
         </ul>
       </div>
       <div className="relative">
-        <BgPatternWrapper
+        <BgPatternSix
           className={`absolute -z-10 pointer-events-none w-[780px] h-[780px] -left-[150px] -top-[635px] md:-left-[80px] md:-top-[540px] lg:-left-[290px] lg:-top-[590px] ${
             pathname === "/" && "hidden"
           } ${pathname === "/pricing" && "lg:-left-[430px] lg:-top-[620px]"}`}
-          id="svg6"
-          idone="eleven"
-          idtwo="twelve"
         />
         <Burger
           className="hover:cursor-pointer md:hidden"
