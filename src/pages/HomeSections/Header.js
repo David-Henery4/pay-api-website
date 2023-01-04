@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { PhoneMockup, BgPattern, BgPatternOne} from "../../assets";
-import BgPatternWrapper from "../../assets/cloneBgPattern";
+import { PhoneMockup, BgPatternOne} from "../../assets";
 import useEmailValidation from "../../validation/useEmailValidation";
 import checkForValueToHideLabel from "../../validation/checkValueHideLabel";
 import { Link } from "react-router-dom";

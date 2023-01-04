@@ -1,6 +1,6 @@
 import React from 'react'
 import { codeSvg,  TwoPhones, BgPatternThree} from "../../assets";
-import BgPatternWrapper from '../../assets/cloneBgPattern';
+
 
 const Description = () => {
   return (

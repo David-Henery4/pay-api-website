@@ -1,7 +1,7 @@
 import React from "react";
 import TestimonialIconGrid from "../SharedSections/TestimonialIconGrid";
-import { BgPattern, BgPatternTwo } from "../../assets";
-import BgPatternWrapper from "../../assets/cloneBgPattern";
+import { BgPatternTwo } from "../../assets";
+
 
 const Testimonials = () => {
   return (

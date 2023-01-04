@@ -17,7 +17,6 @@ import {ReactComponent as CodeSvg} from "./home/desktop/code-svg.svg"
 import {ReactComponent as TwoPhones} from "./home/desktop/two-phones.svg"
 import {ReactComponent as CloseIcon} from "./shared/mobile/close.svg"
 import {ReactComponent as CheckIcon} from "./shared/desktop/icon-check.svg"
-import {ReactComponent as BgPattern} from "./shared/desktop/bg-pattern-circle.svg"
 // SVG BG-PATTERNS
 import { ReactComponent as BgPatternOne } from "./shared/desktop/bg-patterns/bg-pattern-circle-1.svg";
 import {ReactComponent as BgPatternTwo} from "./shared/desktop/bg-patterns/bg-pattern-circle-2.svg"
@@ -25,6 +24,7 @@ import {ReactComponent as BgPatternThree} from "./shared/desktop/bg-patterns/bg-
 import {ReactComponent as BgPatternFour} from "./shared/desktop/bg-patterns/bg-pattern-circle-4.svg"
 import {ReactComponent as BgPatternFive} from "./shared/desktop/bg-patterns/bg-pattern-circle-5.svg"
 import {ReactComponent as BgPatternSix} from "./shared/desktop/bg-patterns/bg-pattern-circle-6.svg"
+import {ReactComponent as BgPatternSeven} from "./shared/desktop/bg-patterns/bg-pattern-circle-7.svg"
 
 // IMGS
 import twoPhones from "./home/desktop/two-phones.svg"
@@ -59,7 +59,6 @@ export{
   TwoPhones,
   CloseIcon,
   CheckIcon,
-  BgPattern,
   // SVG BG-PATTERNS
   BgPatternFive,
   BgPatternFour,
@@ -67,6 +66,7 @@ export{
   BgPatternSix,
   BgPatternThree,
   BgPatternTwo,
+  BgPatternSeven,
   // IMAGES
   twoPhones,
   codeSvg,

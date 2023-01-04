@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import navData from "../navigation/navData";
-import { CloseIcon, BgPattern } from "../assets";
+import { CloseIcon, BgPatternSeven } from "../assets";
 
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   return (
@@ -10,7 +10,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
         isSidebarOpen ? "translate-x-0" : "translate-x-full"
       } fixed transition-all top-0 right-0 h-full bg-secondaryMirageBlue z-50 pt-12 px-6 w-[80.5%] flex flex-col justify-start items-center gap-11 text-center overflow-hidden`}
     >
-      <BgPattern className="pointer-events-none w-[780px] h-[780px] absolute -top-[73.5%]"/>
+      <BgPatternSeven className="pointer-events-none w-[780px] h-[780px] absolute -top-[73.5%]"/>
       <div className="w-full pb-6 flex justify-end border-b border-b-primaryWaterWhite/20">
         <CloseIcon
           className="hover:cursor-pointer"

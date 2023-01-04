@@ -1,6 +1,6 @@
 import React from 'react'
 import { teamImgDesk, teamImgMob, teamImgTab, BgPatternFive } from "../../assets";
-import BgPatternWrapper from '../../assets/cloneBgPattern';
+
 
 const ImageSection = () => {
   return (

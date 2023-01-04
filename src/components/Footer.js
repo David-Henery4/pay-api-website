@@ -7,7 +7,6 @@ import {
   LinkedinIcon,
   BgPatternFour,
 } from "../assets";
-import BgPatternWrapper from "../assets/cloneBgPattern";
 import navData from "../navigation/navData";
 
 const Footer = () => {

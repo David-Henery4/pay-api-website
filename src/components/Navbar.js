@@ -3,10 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Burger, Logo } from "../assets";
 import navData from "../navigation/navData";
 import { BgPatternSix } from "../assets";
-import BgPatternWrapper from "../assets/cloneBgPattern";
-// id="svg5"
-// idone="nine"
-// idtwo="ten"
+
 
 const Navbar = ({ setIsSidebarOpen }) => {
   const { pathname } = useLocation();
