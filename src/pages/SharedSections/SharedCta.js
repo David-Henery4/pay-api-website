@@ -25,10 +25,6 @@ const SharedCta = () => {
     setDoesEmailHaveValue(result)
   },[email])
   //
-  useEffect(() => {
-    console.log(pathname)
-  },[])
-  //
   return (
     <section className="max-w-maxContentWidth mx-auto w-full col-start-2 col-end-12 text-center flex flex-col justify-center items-center gap-8 py-20 tab:py-24 tab:gap-10 lg:flex-row lg:justify-between">
       <h3 className="text-secondarySanJuanBlue text-[32px] font-dmDisplay tab:text-5xl">

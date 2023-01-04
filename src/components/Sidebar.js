@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import navData from "../navigation/navData";
 import { CloseIcon, BgPattern } from "../assets";
 
@@ -22,7 +23,9 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
             className="text-xl font-semibold text-primaryWaterWhite/70 hover:text-primaryWaterWhite"
             key={navItem.id}
           >
-            <a href={navItem.path}>{navItem.name}</a>
+            <Link to={navItem.path}>
+            <p>{navItem.name}</p>
+            </Link>
           </li>
         ))}
         <li>
