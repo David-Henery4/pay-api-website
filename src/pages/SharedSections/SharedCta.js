@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
 import checkForValueToHideLabel from '../../validation/checkValueHideLabel'
 import useEmailValidation from '../../validation/useEmailValidation'
 
 const SharedCta = () => {
-  const {pathname} = useLocation()
   const [email,setEmail] = useState("")
   const [doesEmailHaveValue, setDoesEmailHaveValue] = useState(false)
   //
@@ -38,7 +36,6 @@ const SharedCta = () => {
           id="email-cta"
           type="text"
           name="email-cta"
-          aria-describedby="Enter email to schedule a demo"
           className="input-auto-email text-secondarySanJuanBlue peer h-12 w-full px-7 py-3 rounded-3xl text-sm font-semibold tab:pr-48 outline-none"
           value={email}
           onChange={(e) => setEmail(e.target.value)}

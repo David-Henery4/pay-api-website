@@ -45,7 +45,6 @@ const Header = () => {
             id="email-header"
             type="text"
             name="email-header"
-            aria-describedby="Enter email to schedule a demo"
             className="input-auto-email peer h-12 w-full px-7 py-3 rounded-3xl text-sm text-secondarySanJuanBlue bg-primaryWaterWhite font-semibold tab:pr-48 outline-none"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
