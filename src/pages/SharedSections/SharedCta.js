@@ -39,9 +39,9 @@ const SharedCta = () => {
         className="relative w-full flex flex-col gap-4 max-w-[445px] tab:flex-row"
       >
         <input
-          id="email"
+          id="email-cta"
           type="text"
-          name="email"
+          name="email-cta"
           aria-describedby="Enter email to schedule a demo"
           className="input-auto-email text-secondarySanJuanBlue peer h-12 w-full px-7 py-3 rounded-3xl text-sm font-semibold tab:pr-48 outline-none"
           value={email}
@@ -50,7 +50,7 @@ const SharedCta = () => {
         {doesEmailHaveValue || (
           <label
             className="absolute top-3 left-7 peer-focus:hidden pointer-events-none"
-            htmlFor="email"
+            htmlFor="email-cta"
           >
             Enter email address
           </label>

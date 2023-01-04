@@ -42,9 +42,9 @@ const Header = () => {
           className="relative w-full flex flex-col gap-4 max-w-[445px] tab:flex-row"
         >
           <input
-            id="email"
+            id="email-header"
             type="text"
-            name="email"
+            name="email-header"
             aria-describedby="Enter email to schedule a demo"
             className="input-auto-email peer h-12 w-full px-7 py-3 rounded-3xl text-sm text-secondarySanJuanBlue bg-primaryWaterWhite font-semibold tab:pr-48 outline-none"
             value={email}
@@ -53,7 +53,7 @@ const Header = () => {
           {doesEmailHaveValue || (
             <label
               className="absolute top-3 left-7 peer-focus:hidden pointer-events-none"
-              htmlFor="email"
+              htmlFor="email-header"
             >
               Enter email address
             </label>
