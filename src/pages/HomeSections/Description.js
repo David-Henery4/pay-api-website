@@ -1,5 +1,6 @@
 import React from 'react'
 import { codeSvg,  TwoPhones, BgPattern} from "../../assets";
+import BgPatternWrapper from '../../assets/cloneBgPattern';
 
 const Description = () => {
   return (
@@ -25,7 +26,12 @@ const Description = () => {
       </div>
       {/**/}
       <div className="relative flex flex-col justify-between items-center lg:flex-row-reverse gap-12">
-        <BgPattern className="hidden lg:block pointer-events-none absolute w-[780px] h-[780px] lg:left-[88%] desk:left-[80%]" />
+        <BgPatternWrapper
+          className="hidden lg:block pointer-events-none absolute w-[780px] h-[780px] lg:left-[88%] desk:left-[80%]"
+          id="svg3"
+          idone="five"
+          idtwo="six"
+        />
         <div className="relative z-10 desk:w-full w-full max-w-[363px] desk:max-w-[566px]">
           <TwoPhones className="rounded-[8%]" />
         </div>

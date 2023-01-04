@@ -10,8 +10,8 @@ const Testimonials = () => {
         <BgPatternWrapper
           className="pointer-events-none absolute w-[780px] h-[780px] bottom-3/4 md:bottom-[65%] lg:-left-[35%] lg:-bottom-[30%]"
           id="sv2"
-          idthree="three"
-          idfour="four"
+          idone="three"
+          idtwo="four"
         />
         <TestimonialIconGrid />
         <div className="relative z-10 max-w-[457px] w-full flex flex-col justify-center items-center gap-8 lg:items-start lg:max-w-[445px]">
